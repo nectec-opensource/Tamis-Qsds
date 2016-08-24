@@ -20,11 +20,13 @@ public class LauncherActivity extends AppCompatActivity implements View.OnClickL
         Button knowledge = (Button) findViewById(R.id.knowledge);
         Button buy = (Button) findViewById(R.id.buy);
         Button sell = (Button) findViewById(R.id.sell);
+        Button juristic = (Button) findViewById(R.id.juristic_link);
 
         qsdslink.setOnClickListener(this);
         knowledge.setOnClickListener(this);
         buy.setOnClickListener(this);
         sell.setOnClickListener(this);
+        juristic.setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +67,10 @@ public class LauncherActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.qsds_link:
                 browserIntent.putExtra(WebViewActivity.URL_EXTRA, "http://qsds.go.th/newqsds/Index_web.php");
+                startActivity(browserIntent);
+                break;
+            case R.id.juristic_link:
+                browserIntent.putExtra(WebViewActivity.URL_EXTRA, "http://dev-1.tamis.in.th/fg/index.php");
                 startActivity(browserIntent);
                 break;
         }
