@@ -70,7 +70,7 @@ public class LauncherActivity extends AppCompatActivity implements View.OnClickL
                 startActivity(browserIntent);
                 break;
             case R.id.juristic_link:
-                browserIntent.putExtra(WebViewActivity.URL_EXTRA, "http://dev-1.tamis.in.th/fg/index.php");
+                browserIntent.putExtra(WebViewActivity.URL_EXTRA, "http://qsds.tamis.in.th/fg/index.php");
                 startActivity(browserIntent);
                 break;
         }
