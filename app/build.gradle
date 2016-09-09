@@ -4,6 +4,15 @@ android {
   compileSdkVersion 24
   buildToolsVersion "24.0.1"
 
+  signingConfigs {
+    release {
+      storeFile file("release.keystore")
+      keyAlias System.getenv("NECTEC_KEY_ALIAS")
+      keyPassword System.getenv("NECTEC_KEY_PASSWORD")
+      storePassword System.getenv("NECTEC_STORE_PASSWORD")
+    }
+  }
+
   defaultConfig {
     applicationId "kiosk.qsds.app.tamis.in.th.tamislauncherforqsds"
     minSdkVersion 14
@@ -15,12 +24,13 @@ android {
     release {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      signingConfig signingConfigs.release
     }
   }
 }
 
 dependencies {
-  compile fileTree(dir: 'libs', include: ['*.jar'])
+  compile fileTree(include: ['*.jar'], dir: 'libs')
   compile 'com.android.support:appcompat-v7:24.2.0'
   compile 'com.android.support:support-v4:24.2.0'
   compile 'uk.co.chrisjenx:calligraphy:2.2.0'
