@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kiosk.qsds.app.tamis.in.th.tamislauncherforqsds">
+    package="th.qsds.app.tamis.in.th.qsdscenter">
 
   <uses-permission android:name="android.permission.INTERNET"/>
 
   <application
-      android:name=".LauncherApplication"
+      android:name="th.or.nectec.app.qsdscenter.LauncherApplication"
       android:allowBackup="true"
       android:icon="@mipmap/ic_launcher"
       android:label="@string/app_name"
       android:theme="@style/FullscreenTheme">
 
     <activity
-        android:name=".LauncherActivity"
+        android:name="th.or.nectec.app.qsdscenter.LauncherActivity"
         android:configChanges="orientation|keyboardHidden|screenSize"
         android:label="@string/app_name">
       <intent-filter>
@@ -22,7 +22,7 @@
     </activity>
 
     <activity
-        android:name=".WebViewActivity">
+        android:name="th.or.nectec.app.qsdscenter.WebViewActivity">
     </activity>
   </application>
 

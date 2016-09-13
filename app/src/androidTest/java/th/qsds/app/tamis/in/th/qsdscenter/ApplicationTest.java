@@ -1,4 +1,4 @@
-package kiosk.qsds.app.tamis.in.th.tamislauncherforqsds;
+package th.qsds.app.tamis.in.th.qsdscenter;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,6 +1,7 @@
-package kiosk.qsds.app.tamis.in.th.tamislauncherforqsds;
+package th.or.nectec.app.qsdscenter;
 
 import android.app.Application;
+import th.qsds.app.tamis.in.th.qsdscenter.R;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 public class LauncherApplication extends Application {

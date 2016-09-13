@@ -14,7 +14,7 @@ android {
   }
 
   defaultConfig {
-    applicationId "kiosk.qsds.app.tamis.in.th.tamislauncherforqsds"
+    applicationId "th.or.nectec.app.qsdscenter"
     minSdkVersion 14
     targetSdkVersion 23
     versionCode 1

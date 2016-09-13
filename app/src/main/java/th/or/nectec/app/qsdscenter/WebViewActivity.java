@@ -1,4 +1,4 @@
-package kiosk.qsds.app.tamis.in.th.tamislauncherforqsds;
+package th.or.nectec.app.qsdscenter;
 
 import android.net.http.SslError;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import th.qsds.app.tamis.in.th.qsdscenter.R;
 
 public class WebViewActivity extends AppCompatActivity {
 

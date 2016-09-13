@@ -1,4 +1,4 @@
-package kiosk.qsds.app.tamis.in.th.tamislauncherforqsds;
+package th.or.nectec.app.qsdscenter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import th.qsds.app.tamis.in.th.qsdscenter.R;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class LauncherActivity extends AppCompatActivity implements View.OnClickListener {
